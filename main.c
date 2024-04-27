@@ -1,7 +1,5 @@
 #include <stdint.h>
 #include <malloc.h>
-#include <string.h>
-#include <stdio.h>
 
 #define MIN_TID 300
 #define MAX_TID 5000
@@ -37,7 +35,6 @@
 typedef struct bitmap{
     uint32_t *array;
     size_t size_in_bytes;
-    size_t occupied;
 } bitmap_t;
 
 bitmap_t *map;
@@ -55,22 +52,21 @@ int allocate_map (void)
     if(map == NULL)
         return -1;
 
-    map->occupied = 0;
     map->size_in_bytes = ((MAX_TID-MIN_TID)/32) + 1; //4700/32 = 146 + 1 = 147
 
     map->array = calloc(map->size_in_bytes, sizeof(uint32_t));
     if(map->array == NULL)
         return -1;
 
-    for(int i = 0; i < map->size_in_bytes; i++)
+    for(int i = 0; i < map->size_in_bytes; ++i)
         map->array[i] = 0;
 
     return 1;
 }
 
-int allocate_tid(void)
+int allocate_tid (void)
 {
-    for(int i = 0; i < map->size_in_bytes-1; ++i){ //A[0] - A[145]
+    for(int i = 0; i < map->size_in_bytes-1; ++i) //A[0] - A[145]
     {
         if(map->array[i] != 0xFFFFFFFF)
         {
@@ -86,7 +82,7 @@ int allocate_tid(void)
     }
     if(map->array[146] != 0x0FFFFFFF)   //A[146]
     {
-        for(int j = 146*32; j < 147 * 32; j++)
+        for(int j = 146*32; j < 147 * 32; ++j)
         {
             if(!TestBit(map->array, j))
             {
@@ -99,7 +95,7 @@ int allocate_tid(void)
 }
 
 
-void release_tid(int tid)
+void release_tid (int tid)
 {
     tid -= 300;
     ClearBIT(map->array, tid);
