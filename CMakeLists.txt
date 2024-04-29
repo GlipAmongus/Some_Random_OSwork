@@ -3,4 +3,4 @@ project(TID_Assignment C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(TID_Assignment main.c)
+add_executable(t main.c)

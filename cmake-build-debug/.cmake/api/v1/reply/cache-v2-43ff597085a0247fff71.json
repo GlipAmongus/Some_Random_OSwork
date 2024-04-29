@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/User/OneDrive/Desktop/Uni/Year_1/Semester_2/CPS1012_OS/TID_Assignment/cmake-build-debug"
+			"value" : "c:/Users/User/OneDrive/Desktop/Uni/yr1/sm2/CPS1012_OS/TID_Assignment/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -431,7 +431,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/User/OneDrive/Desktop/Uni/Year_1/Semester_2/CPS1012_OS/TID_Assignment/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/User/OneDrive/Desktop/Uni/yr1/sm2/CPS1012_OS/TID_Assignment/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -503,7 +503,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/User/OneDrive/Desktop/Uni/Year_1/Semester_2/CPS1012_OS/TID_Assignment"
+			"value" : "C:/Users/User/OneDrive/Desktop/Uni/yr1/sm2/CPS1012_OS/TID_Assignment"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1119,7 +1119,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/User/OneDrive/Desktop/Uni/Year_1/Semester_2/CPS1012_OS/TID_Assignment/cmake-build-debug"
+			"value" : "C:/Users/User/OneDrive/Desktop/Uni/yr1/sm2/CPS1012_OS/TID_Assignment/cmake-build-debug"
 		},
 		{
 			"name" : "TID_Assignment_IS_TOP_LEVEL",
@@ -1143,7 +1143,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/User/OneDrive/Desktop/Uni/Year_1/Semester_2/CPS1012_OS/TID_Assignment"
+			"value" : "C:/Users/User/OneDrive/Desktop/Uni/yr1/sm2/CPS1012_OS/TID_Assignment"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",

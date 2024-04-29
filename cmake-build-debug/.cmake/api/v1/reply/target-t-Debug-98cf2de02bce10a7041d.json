@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "TID_Assignment.exe"
+			"path" : "t.exe"
 		},
 		{
-			"path" : "TID_Assignment.pdb"
+			"path" : "t.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -56,7 +56,7 @@
 			]
 		}
 	],
-	"id" : "TID_Assignment::@6890427a1f51a3e7e1df",
+	"id" : "t::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -76,8 +76,8 @@
 		],
 		"language" : "C"
 	},
-	"name" : "TID_Assignment",
-	"nameOnDisk" : "TID_Assignment.exe",
+	"name" : "t",
+	"nameOnDisk" : "t.exe",
 	"paths" : 
 	{
 		"build" : ".",

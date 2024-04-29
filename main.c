@@ -1,5 +1,8 @@
 #include <stdint.h>
 #include <malloc.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <stdio.h>
 
 #define MIN_TID 300
 #define MAX_TID 5000
@@ -38,13 +41,89 @@ typedef struct bitmap{
 } bitmap_t;
 
 bitmap_t *map;
-
 int allocate_map (void);
 int allocate_tid (void);
 void release_tid (int tid);
 
+int main(int argc, char *argv[])
+{
 
-int main() {}
+    int opt;
+    int n = 100, l = 1, h = 10; //default values
+    char* endp = NULL;
+    long p = -1;
+
+
+    // put ':' in the starting of the
+    // string so that program can
+    //distinguish between '?' and ':'
+    while((opt = getopt(argc, argv, "n::l::h::")) != -1)
+    {
+        switch(opt)
+        {
+            case 'n':
+            {
+                if (optarg && ((p=strtol(optarg, &endp, 0),(endp && *endp))))
+                { fprintf(stderr, "invalid n option %s - expecting a number\n",
+                          optarg);
+                    exit(EXIT_FAILURE);
+                }
+                if(!optarg)
+                    break;
+                n = (int) p;
+                if(optarg && (n!=n)) //some range
+                {
+                    fprintf(stderr, "invalid range %s - expecting a number {50 - 100}\n,"
+                                    , optarg);
+                    exit(EXIT_FAILURE);
+                }
+                break;
+            }
+            case 'l':
+            {
+                if (optarg && ((p=strtol(optarg, &endp, 0),(endp && *endp))))
+                { fprintf(stderr, "invalid l option %s - expecting a number\n",
+                          optarg);
+                    exit(EXIT_FAILURE);
+                }
+                if(!optarg)
+                    break;
+                l = (int) p;
+                if(optarg && (l!=l)) //some range
+                {
+                    fprintf(stderr, "invalid range %s - expecting a number {50 - 100}\n,"
+                            , optarg);
+                    exit(EXIT_FAILURE);
+                }
+                break;
+            }
+            case 'h':
+            {
+                if (optarg && ((p=strtol(optarg, &endp, 0),(endp && *endp))))
+                { fprintf(stderr, "invalid h option %s - expecting a number\n",
+                          optarg);
+                    exit(EXIT_FAILURE);
+                }
+                if(!optarg)
+                    break;
+                h = (int) p;
+                if(optarg && (h!=h)) //some range
+                {
+                    fprintf(stderr, "invalid range %s - expecting a number {50 - 100}\n,"
+                            , optarg);
+                    exit(EXIT_FAILURE);
+                }
+                break;
+            }
+            default: /* '?' */
+                fprintf(stderr, "Usage: %s [-n int] [-l int] [-h int] name\n",
+                        argv[0]);
+                exit(EXIT_FAILURE);
+        }
+    }
+
+    return 0;
+}
 
 int allocate_map (void)
 {
