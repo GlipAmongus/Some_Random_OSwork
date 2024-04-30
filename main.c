@@ -71,12 +71,12 @@ int main(int argc, char *argv[])
                 if(!optarg)
                     break;
                 n = (int) p;
-                if(optarg && (n!=n)) //some range
-                {
-                    fprintf(stderr, "invalid range %s - expecting a number {50 - 100}\n,"
-                                    , optarg);
-                    exit(EXIT_FAILURE);
-                }
+//                if(optarg && (n!=n)) //some range
+//                {
+//                    fprintf(stderr, "invalid range %s - expecting a number {50 - 100}\n,"
+//                                    , optarg);
+//                    exit(EXIT_FAILURE);
+//                }
                 break;
             }
             case 'l':
@@ -89,12 +89,12 @@ int main(int argc, char *argv[])
                 if(!optarg)
                     break;
                 l = (int) p;
-                if(optarg && (l!=l)) //some range
-                {
-                    fprintf(stderr, "invalid range %s - expecting a number {50 - 100}\n,"
-                            , optarg);
-                    exit(EXIT_FAILURE);
-                }
+//                if(optarg && (l!=l)) //some range
+//                {
+//                    fprintf(stderr, "invalid range %s - expecting a number {50 - 100}\n,"
+//                            , optarg);
+//                    exit(EXIT_FAILURE);
+//                }
                 break;
             }
             case 'h':
@@ -107,12 +107,12 @@ int main(int argc, char *argv[])
                 if(!optarg)
                     break;
                 h = (int) p;
-                if(optarg && (h!=h)) //some range
-                {
-                    fprintf(stderr, "invalid range %s - expecting a number {50 - 100}\n,"
-                            , optarg);
-                    exit(EXIT_FAILURE);
-                }
+//                if(optarg && (h!=h)) //some range
+//                {
+//                    fprintf(stderr, "invalid range %s - expecting a number {50 - 100}\n,"
+//                            , optarg);
+//                    exit(EXIT_FAILURE);
+//                }
                 break;
             }
             default: /* '?' */
@@ -121,6 +121,8 @@ int main(int argc, char *argv[])
                 exit(EXIT_FAILURE);
         }
     }
+
+    allocate_map();
 
     return 0;
 }

@@ -1,3 +1,3 @@
-C:/Users/User/OneDrive/Desktop/Uni/yr1/sm2/CPS1012_OS/TID_Assignment/cmake-build-debug/CMakeFiles/t.dir
-C:/Users/User/OneDrive/Desktop/Uni/yr1/sm2/CPS1012_OS/TID_Assignment/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/User/OneDrive/Desktop/Uni/yr1/sm2/CPS1012_OS/TID_Assignment/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/User/OneDrive/Desktop/Uni/yr1/sm2/cps1012/tid/cmake-build-debug/CMakeFiles/t.dir
+C:/Users/User/OneDrive/Desktop/Uni/yr1/sm2/cps1012/tid/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/User/OneDrive/Desktop/Uni/yr1/sm2/cps1012/tid/cmake-build-debug/CMakeFiles/rebuild_cache.dir

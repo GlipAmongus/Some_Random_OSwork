@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/User/OneDrive/Desktop/Uni/yr1/sm2/CPS1012_OS/TID_Assignment/cmake-build-debug",
-		"source" : "C:/Users/User/OneDrive/Desktop/Uni/yr1/sm2/CPS1012_OS/TID_Assignment"
+		"build" : "C:/Users/User/OneDrive/Desktop/Uni/yr1/sm2/cps1012/tid/cmake-build-debug",
+		"source" : "C:/Users/User/OneDrive/Desktop/Uni/yr1/sm2/cps1012/tid"
 	},
 	"version" : 
 	{

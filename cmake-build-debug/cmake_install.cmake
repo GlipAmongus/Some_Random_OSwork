@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/User/OneDrive/Desktop/Uni/yr1/sm2/CPS1012_OS/TID_Assignment
+# Install script for directory: C:/Users/User/OneDrive/Desktop/Uni/yr1/sm2/cps1012/tid
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/User/OneDrive/Desktop/Uni/yr1/sm2/CPS1012_OS/TID_Assignment/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/User/OneDrive/Desktop/Uni/yr1/sm2/cps1012/tid/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
